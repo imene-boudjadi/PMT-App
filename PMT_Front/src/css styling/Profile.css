@@ -1,0 +1,143 @@
+/* Your other styles here */
+
+.profile-content {
+    position: absolute;
+    top: 50px; /* Set it to the height of the .horizontal-bar */
+    right: 0;
+    width: calc(100% - 229px); /* Set the width of the horizontal bar to cover the remaining space */
+    height: calc(100% - 50px); /* Set the height to cover the remaining space */ /* Set the background color as needed */
+  }
+  
+  /* Your other styles here */
+  
+
+.profile-box {
+  position: fixed;
+  height: 60px;
+  background-color: #fff; 
+  width: 100%;
+  
+}
+
+.profile-box h1{
+  color: #34444c;
+  margin-left: 50px;
+  font-size: 32px;
+  margin-bottom: 10px;
+  margin-top: -8px;
+
+
+}
+
+  /* Add a blur effect to the bottom of the rectangle */
+.profile-box::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust the value to control the blur size */
+    left: 0;
+    width: 100%;
+    height: 10px; /* Adjust the value to control the blur size */
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.1));
+    z-index: 2; /* To make the blur appear above the navbar */
+}
+
+.profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.1), /* Main drop shadow */
+      -8px -8px 20px rgba(0, 0, 0, 0.1), /* Top left corner shadow */
+      8px -8px 20px rgba(0, 0, 0, 0.1), /* Top right corner shadow */
+      -8px 8px 20px rgba(0, 0, 0, 0.1), /* Bottom left corner shadow */
+      8px 8px 20px rgba(0, 0, 0, 0.1); /* Bottom right corner shadow */
+}
+
+.profile-card .vertical-line {
+    border-left: 1px solid rgba(128, 128, 128, 0.5);
+
+    height: 80%;
+    margin-right:  20px ; /* Add this line to adjust the space */
+    margin-left: 0;
+}
+
+.profile-card  .user-icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5x;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #34444c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fff; /* You can customize the border color */
+    margin-bottom: 10px; /* Adjust the space between circle and user-info */
+}
+
+.user-icon .user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #34444c;
+
+}
+.user-info h4{
+    margin-bottom: -15px;
+}
+
+
+
+.profile-card button {
+    background-color: #F48220;
+    margin-top: 7%;
+    color: #FFF;
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.2s ease;
+  }
+  .profile-card button:hover {
+    transform: scale(0.95); 
+  }
+
+
+  .password-input-container {
+    position: relative;
+  }
+  .password-input-container button{
+    background-color: none;
+  }
+
+  
+  .password-toggle-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+    

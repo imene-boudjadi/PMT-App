@@ -1,0 +1,40 @@
+/* HorizontalNavbar.css */
+.horizontal-bar {
+  position: fixed;
+  top: 0;
+  right: 0; 
+  height: 15px; /* Set the height of the horizontal bar */
+  background-color: #f48320cc; /* Set the color of the horizontal bar */
+  width: calc(100% - 229px); /* Set the width of the horizontal bar to cover the remaining space */
+  z-index: 1; /* Add a z-index to ensure the bar is above other elements */
+
+}
+
+.user-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Push the user icon to the right end using flexbox */
+  height: 100%; /* Ensure the user icon takes the full height of the horizontal bar */
+  padding-right: 5%;
+  margin-top: 50px;
+  padding-left: 10%;
+  
+}
+
+.user-icon a {
+  display: flex;
+  cursor: pointer ;
+  color: #f48320cc;
+  font-size: 30px;
+}
+.user-icon a:hover > svg {
+  color: #f48320;
+}
+.logout-icon{
+  margin-left: 2%;
+}
+
+
+
+
+

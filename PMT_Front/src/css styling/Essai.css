@@ -1,0 +1,17 @@
+.table-container th {
+    text-align: center; /* Center-align the header text */
+    vertical-align: middle; /* Vertically align the header content */
+    border: 1px solid black; /* Add border for consistency */
+  }
+  
+  /* Style for the merged "Remplacement", "Déficit", "Projet Dev" header */
+  .merged-header {
+    background-color: #f0f0f0; /* Add a background color to visually separate */
+  }
+  
+  /* Style for the data cells in the merged column */
+  .merged-cell {
+    text-align: center; /* Center-align the cell content */
+    vertical-align: middle; /* Vertically align the cell content */
+  }
+  

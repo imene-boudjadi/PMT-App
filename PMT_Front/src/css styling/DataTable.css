@@ -1,0 +1,217 @@
+.liste-content {
+  position: absolute;
+  top: 15px; /* Set it to the height of the .horizontal-bar */
+  right: 0;
+  width: calc(100% - 229px); /* Set the width of the horizontal bar to cover the remaining space */
+  height: calc(100% - 20px); /* Set the height to cover the remaining space */ /* Set the background color as needed */
+}
+
+.liste-box{
+  position: fixed;
+  height: 11.7%;
+  background-color: #fff; 
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.liste-box h1{
+  color: #34444c;
+  margin-left: 50px;
+  font-size: 32px;
+  margin-bottom: 10px;
+  margin-top: 1.5%;
+
+}
+
+  /* Add a blur effect to the bottom of the rectangle */
+.liste-box::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust the value to control the blur size */
+    left: 0;
+    width: 100%;
+    height: 10px; /* Adjust the value to control the blur size */
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.1));
+    z-index: 2; /* To make the blur appear above the navbar */
+}
+ 
+.btn-liste{
+  margin-top: 10%;
+  margin-left: 80%;
+}
+
+
+.data-table-elements-container{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%; /* Adjust this to your needs */
+  
+}
+.acceuil-wrapper{
+  border: 1px solid #34444c;
+  border-radius: 5%;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.table-nb-employees-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align items to the right */
+}
+
+/* Applying styles to the table */
+.table-container {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  margin: auto; /* Center the table on the page */
+  overflow: hidden;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  max-width: calc(100% - 50px); /* Adjust this value as needed */
+}
+
+.nb-employees {
+  margin-right: 2%;
+  margin-top: 1%; 
+}
+
+
+.scrollable-container {
+  max-height: 600px; /* Set the maximum height for scrollable content */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x:auto ;
+  padding: 10px;
+  }
+
+  
+  /* Applying styles to the table header */
+  .table-container thead th {
+    background-color: #34444c;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    width: auto;
+    max-width: 200px;
+  }
+  thead th .form-action{
+    position: fixed;
+  }
+  
+  /* Applying styles to the table rows */
+  .table-container tbody td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    width: auto;
+    max-width: 200px;
+  }
+  
+  /* Highlight the row on hover */
+  .table-container tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Applying styles to the icons */
+  .icon {
+    cursor: pointer;
+    margin-right: 10px;
+    color: #34444c;
+  }
+
+  .search-download-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+
+/* Applying styles to the search input container */
+.search-input-container {
+    position: relative;
+    margin-top: 2% ;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 10px;
+  }
+  
+  /* Applying styles to the search input */
+  .search-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60%;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding-left: 30px; 
+  }
+  
+  /* Applying styles to the search icon */
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+  }
+ 
+  .pagin-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items both horizontally and vertically */
+    
+  }
+
+   /* Applying styles to the pagination */
+ /* Applying styles to the pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items both horizontally and vertically */
+  margin-top: 20px;
+  margin-right: 10px; /* Add some spacing between pagination and items per page */
+}
+
+.pagination ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.pagination li {
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pagination li.active {
+  background-color: #34444c;
+  color: white;
+}
+
+/* Applying the styles to the items per page */
+.items-per-page {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items both horizontally and vertically */
+  margin-top: 20px;
+}
+
+  
+  
+  
+  .items-per-page select {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    align-self: center;
+  }
+  
