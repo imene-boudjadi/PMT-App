@@ -9,7 +9,7 @@ const pool = mysql.createPool({
   waitForConnections: true,
 });
 
-// Test the database connection
+// Test the database connection 
 pool.getConnection((err, connection) => {
   if (err) {
     console.error('Error connecting to database:', err);
