@@ -7,8 +7,6 @@ const pool = mysql.createPool({
   database: 'pmt',
   password: '',
   waitForConnections: true,
-  // connectionLimit: 10, // Adjust this based on your needs
-  // // queueLimit: 0
 });
 
 // Test the database connection
